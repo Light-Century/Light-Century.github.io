@@ -1,207 +1,966 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
   <meta charset="utf-8">
+  <link rel="icon" href="../images/logo.png">
   
+  <title>Light_Cone&#39;s blog</title>
+  <meta name="author" content="Light_Cone" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="" />
+  
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="Light_Cone&#39;s blog">
+<meta property="og:url" content="https://light-century.github.io/index.html">
+<meta property="og:site_name" content="Light_Cone&#39;s blog">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:image" content="https://light-century.github.io/images/logo.png">
+<meta property="article:author" content="Light_Cone">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://light-century.github.io/images/logo.png">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
+  <!-- 站点验证相关 -->
   
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
   
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-paw"></i>朋友们</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Light_Cone&#39;s blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Light_Cone&#39;s blog</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <!-- Breadcrumb for tag & category page -->
+
+
+
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                    <div class="pin-top wrapper">
+                        <div class="pin-top inner"></div>
+                    </div>
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2022/10/08/My-story/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%97%B2%E8%AF%9D/">闲话</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/10/08/My-story/" itemprop="mainEntityOfPage"><span itemprop="name headline">My start</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                Hello,World!
+以后会经常写blog的！
+
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2022-10-07T16:27:17.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-10-08</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E9%97%B2%E8%AF%9D/" rel="tag">闲话</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2022/10/08/My-story/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2022/09/02/%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">算法学习笔记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/09/02/%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/" itemprop="mainEntityOfPage"><span itemprop="name headline">翻车记录</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                2022.9.2
+P8469
+
+
+若取两数列比较，一数列严格不大于另一数列，求一数列整体gcd最大，则\(gcd(a_1,a_2,...,a_n)_{max}=\min
+{a_i}\)
+以及在int中 \(2^{30}&g...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2022-09-02T05:01:35.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-09-02</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2022/09/02/%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/04/26/luogu-P2651-%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7III%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/04/26/luogu-P2651-%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7III%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">luogu P2651 【添加括号III】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                看题解区几乎都是gcd的做法,那我来写一发取模运算吧...
+不难想到，分母数量越少，越可能被整除，仔细观察可发现，当分式为 \(\frac{a_1}{(\frac{a_2}{\frac{a_3}{...}})}\),可以化简为\(\...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-04-26T05:03:05.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-04-26</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/04/26/luogu-P2651-%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7III%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/03/15/%E5%85%B3%E4%BA%8E%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E7%9A%84%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">算法学习笔记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/03/15/%E5%85%B3%E4%BA%8E%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E7%9A%84%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96/" itemprop="mainEntityOfPage"><span itemprop="name headline">关于杨辉三角的空间优化</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                杨辉三角空间优化
+对于一般二维做法，相信大家已经非常清楚了。本文主要讨论关于杨辉三角的空间优化。
+在这里放一下杨辉三角的递推式：f[i][j]=f[i-1][j-1]+f[i-1][j]。
+根据递推式，不难想到，每个位置的值只与...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-03-15T15:37:35.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-03-15</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/03/15/%E5%85%B3%E4%BA%8E%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E7%9A%84%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/02/26/luogu-P5719-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA4-%E4%BE%8B3%E3%80%91%E5%88%86%E7%B1%BB%E5%B9%B3%E5%9D%87%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/02/26/luogu-P5719-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA4-%E4%BE%8B3%E3%80%91%E5%88%86%E7%B1%BB%E5%B9%B3%E5%9D%87%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">luogu P5719 【【深基4.例3】分类平均】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                复杂度可以做到O(1)..
+不难发现题目的几个性质
+
+A类+B类 的和 =\(\sum_{i=1}^{n}
+i\)
+一个数不是A类就是B类
+A类数的第一个必然为k
+A类数由1k,2k+....+floor(\(\frac...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-02-26T13:33:19.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-02-26</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/02/26/luogu-P5719-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA4-%E4%BE%8B3%E3%80%91%E5%88%86%E7%B1%BB%E5%B9%B3%E5%9D%87%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/02/14/My-Back-Pages/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/Memory/">Memory</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/02/14/My-Back-Pages/" itemprop="mainEntityOfPage"><span itemprop="name headline">My_Back_Pages</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                2017暑假
+由于lcyz当年的信息营人员过少，于是来到了我们初中来拉人学习OI...就此入坑..
+2017.9月
+暑假的OI培训考试成绩汇总出来了，蒟蒻AK掉了所有比赛成为了rk1..因为题目过水，还有原题鱼目混珠，同时因为暑...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-02-14T11:02:36.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-02-14</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/Memory/" rel="tag">Memory</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/02/14/My-Back-Pages/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/02/05/luogu-P5736-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA7-%E4%BE%8B2%E3%80%91%E8%B4%A8%E6%95%B0%E7%AD%9B%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/02/05/luogu-P5736-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA7-%E4%BE%8B2%E3%80%91%E8%B4%A8%E6%95%B0%E7%AD%9B%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">luogu P5736 【【深基7.例2】质数筛】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                看见题解区没有用Miller-Rabin，所以我来了
+这道题不需要打素数表，只要直接判断输出即可。
+
+算法介绍：Miller-Rabin
+12Miller-Rabin素性检验是一种素数判定法则，利用随机化算法判断一个数是合数还...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-02-05T09:39:37.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-02-05</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/02/05/luogu-P5736-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA7-%E4%BE%8B2%E3%80%91%E8%B4%A8%E6%95%B0%E7%AD%9B%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">luogu P6015 【[CSGRound3]游戏】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                双指针做法
+坑点:贪心是错误的。
+举例 5 1 3 3
+，k=6,可以发现，按贪心来取，X=6时，前缀和最大可以取到（5+1）6，而后面也可以取到(
+3+3）6，而第一段只取5时，第二段最大只能取到4，所以此时有必胜策略，故贪...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-01-29T10:20:30.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-01-29</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/01/21/CF918A-%E3%80%90Eleven%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/01/21/CF918A-%E3%80%90Eleven%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">CF918A 【Eleven】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                一看这道题没有用字符串的，我就知道我的机会来了
+由题意，我们要在斐波那契数列的数位上输出"O", 其它的位置输出"o"
+，那么我们可以用一个now来存放当且斐波那契数列的未被走过的位置，若当前走的位置不等于斐波那契数列第一位未走过...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-01-21T04:12:23.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-01-21</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/Codeforces/" rel="tag">Codeforces</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/01/21/CF918A-%E3%80%90Eleven%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2020/01/01/luogu-P5887-%E3%80%90Ringed-Genesis%E3%80%91/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/01/01/luogu-P5887-%E3%80%90Ringed-Genesis%E3%80%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">luogu P5887 【Ringed Genesis】</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                （大概是去世的NOIP.PJ T1难度
+
+由题意可知，兔子爬过的格子是一个环，移动方式是（当前位置+k）%n。
+由此可见每一只兔子的移动方式都是同样的，所以当一只兔子跳到一个曾经跳过的位置，便意味着接下来的位置也都被之前跳跃过了...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2020-01-01T10:46:37.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-01-01</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2020/01/01/luogu-P5887-%E3%80%90Ringed-Genesis%E3%80%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+
+
+    <div class='text-center pagination'>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+
+
+    <div class="hidden">
+        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
         
-          <a class="main-nav-link" href="/">Home</a>
+    </div>
+
+
+
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+
+            </section>
+
         
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/Light_Cone.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                12
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                4
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                7
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Memory/">Memory</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">算法学习笔记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%AF%9D/">闲话</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a><span class="category-list-count">7</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/CSP-2019-S/" style="font-size: 0.6em;">CSP-2019-S</a> <a href="/tags/Codeforces/" style="font-size: 0.6em;">Codeforces</a> <a href="/tags/Memory/" style="font-size: 0.65em;">Memory</a> <a href="/tags/luogu/" style="font-size: 0.7em;">luogu</a> <a href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" style="font-size: 0.8em;">算法笔记</a> <a href="/tags/%E9%97%B2%E8%AF%9D/" style="font-size: 0.6em;">闲话</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.75em;">题解</a>
       </div>
-    </div>
-  </div>
-</header>
+  </aside>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/10/08/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-10-08T12:50:29.790Z" itemprop="datePublished">2022-10-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/10/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/08/hello-world/" data-id="cl8zx0pht0000l4v550u65k86" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
+        
+          
+          
+            <a class="list-group-item" href="/2022/10/08/My-story/"><i class="fa  fa-book"></i> My start</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/09/02/%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"><i class="fa  fa-book"></i> 翻车记录</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/04/26/luogu-P2651-%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7III%E3%80%91/"><i class="fa  fa-book"></i> luogu P2651 【添加括号III】</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/03/15/%E5%85%B3%E4%BA%8E%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E7%9A%84%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96/"><i class="fa  fa-book"></i> 关于杨辉三角的空间优化</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/02/26/luogu-P5719-%E3%80%90%E3%80%90%E6%B7%B1%E5%9F%BA4-%E4%BE%8B3%E3%80%91%E5%88%86%E7%B1%BB%E5%B9%B3%E5%9D%87%E3%80%91/"><i class="fa  fa-book"></i> luogu P5719 【【深基4.例3】分类平均】</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
   </div>
-  
-</article>
+  </aside>
 
-
-
-  
-
-
+            
+    </div>
 </section>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
+        </div>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/10/08/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        <li><a href="mailto:Light_Cone@foxmail.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/Light-Century"><i class="fa fa-github"></i></a></li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2022 Light_Cone's blog 版权所有.</li>
+                            <li>已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Light_Cone.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://Light-Century.github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
     </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
+</div>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
 
 
 
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
 
 
-  </div>
-</body>
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
 </html>
