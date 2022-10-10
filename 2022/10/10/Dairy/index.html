@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="../images/logo.png">
   
-  <title>luogu P6015 【[CSGRound3]游戏】 | Light_Cone&#39;s blog</title>
+  <title>Dairy_1 | Light_Cone&#39;s blog</title>
   <meta name="author" content="Light_Cone" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -14,22 +14,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="luogu, 算法笔记, 题解" />
+    <meta name="keywords" content="闲话" />
   
-  <meta name="description" content="双指针做法 坑点:贪心是错误的。 举例 5 1 3 3 ，k&#x3D;6,可以发现，按贪心来取，X&#x3D;6时，前缀和最大可以取到（5+1）6，而后面也可以取到( 3+3）6，而第一段只取5时，第二段最大只能取到4，所以此时有必胜策略，故贪心是错误的，我们需要逐个枚举第一段取到的纸牌数。  由于每次两个人取到的纸牌的末尾下表都是不下降的，也就是说，通过双指针进行扫描可以有一个很优的复杂度不会分析。我">
+  <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="luogu P6015 【[CSGRound3]游戏】">
-<meta property="og:url" content="https://light-century.github.io/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/index.html">
+<meta property="og:title" content="Dairy_1">
+<meta property="og:url" content="https://light-century.github.io/2022/10/10/Dairy/index.html">
 <meta property="og:site_name" content="Light_Cone&#39;s blog">
-<meta property="og:description" content="双指针做法 坑点:贪心是错误的。 举例 5 1 3 3 ，k&#x3D;6,可以发现，按贪心来取，X&#x3D;6时，前缀和最大可以取到（5+1）6，而后面也可以取到( 3+3）6，而第一段只取5时，第二段最大只能取到4，所以此时有必胜策略，故贪心是错误的，我们需要逐个枚举第一段取到的纸牌数。  由于每次两个人取到的纸牌的末尾下表都是不下降的，也就是说，通过双指针进行扫描可以有一个很优的复杂度不会分析。我">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
-<meta property="article:published_time" content="2020-01-29T10:20:30.000Z">
-<meta property="article:modified_time" content="2022-10-08T05:17:18.621Z">
+<meta property="article:published_time" content="2022-10-10T07:37:55.000Z">
+<meta property="article:modified_time" content="2022-10-10T08:16:54.668Z">
 <meta property="article:author" content="Light_Cone">
-<meta property="article:tag" content="算法笔记">
-<meta property="article:tag" content="题解">
-<meta property="article:tag" content="luogu">
+<meta property="article:tag" content="闲话">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://light-century.github.io/images/logo.png">
   
@@ -148,15 +146,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/">
+    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2022/10/10/Dairy/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">luogu P6015 【[CSGRound3]游戏】</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Dairy_1</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2020-01-29T10:20:30.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2020-01-29</time></li>
+                <li><time datetime="2022-10-10T07:37:55.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-10</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Light_Cone</span>
                 </li>
@@ -164,7 +162,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        856
+                        ~9.01K
                     
                     字
                 </li>
@@ -175,21 +173,23 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1665206238621"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1665389814668"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="双指针做法">双指针做法</h1>
-<h3 id="坑点贪心是错误的">坑点:贪心是错误的。</h3>
-<p>举例 5 1 3 3
-，k=6,可以发现，按贪心来取，<strong>X=6</strong>时，前缀和最大可以取到（5+1）6，而后面也可以取到(
-3+3）6，<strong>而第一段只取5时，第二段最大只能取到4，所以此时有必胜策略</strong>，故贪心是错误的，<strong>我们需要逐个枚举第一段取到的纸牌数</strong>。</p>
-<hr />
-<p><strong>由于每次两个人取到的纸牌的末尾下表都是不下降的</strong>，也就是说，通过双指针进行扫描可以有一个很优的复杂度<del>不会分析</del>。<strong>我们可以对于第一段取的纸牌数逐个枚举，而对于第二段就可以直接向后扫描取最大值了。</strong></p>
-<h2 id="code">Code：</h2>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="type">int</span> n,k,p1,p2,cnt,c[<span class="number">1000010</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> sum[<span class="number">1000010</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;sum[i]),sum[i]+=sum[i<span class="number">-1</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;k);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=k;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(;sum[p1]&lt;=i&amp;&amp;p1&lt;=n;p1++)</span><br><span class="line">		&#123;	</span><br><span class="line">			<span class="keyword">while</span>(sum[p2+<span class="number">1</span>]-sum[p1]&lt;=i&amp;&amp;p2&lt;n)</span><br><span class="line">			p2++;</span><br><span class="line">			<span class="keyword">if</span>(sum[p1]*<span class="number">2</span>&gt;sum[p2])</span><br><span class="line">			&#123;</span><br><span class="line">				c[++cnt]=i;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,cnt);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++)</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,c[i]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div itemprop="articleBody"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="911fb562391ef373181654450ca6d4862250a889a0f8a50c3949105379508148">96ef0d7168ca88e41ea44056de517a9eba0b8af6ee8fc10731045407e09b93786a7d7301cce561a81ca88155bb3cbf882c128452d32c899f01f9f6dfbcc20aec172418351617cf5379d7e1b4d33b2d3ff827380a75f9003dd43dfb938fbb152c9727cd62f0e3969d8bcdc9a41902a4cbfa21d84328e66084aa8917608a8d24c918841e1a89708e09bd49aeeeba3b75e80d232fcb1d324dbee81896bc95c1615eb9dfc7bacc26fffb7c1f5750612b1c0b33ae695c78124d666959680e16db40e967b3a7b2e87cb939c370dfe865a947edf63271f16132ca5d9ec768af4a8ce21ad4dcb1fff3fd69c9dd1f65dcd83bb496b89ba091d9ba8ab20776679a9cd2c2ebd0e2a0981d65693c179c65d32d4d57b854d184807d22cecb44cbc72070f81861655062fb99dc2bfbdd609c4d904717889c8033e81df72d9182f82d040b38e45e9c49e037d47bc54c6d57c8c1e45718355f4004a1062289481dd02ee5a17eec8ba5644cdc906f9e172f9277cf36a8751c3aa5e448c65eee9b3be2d9ccbc7623f3fd49bebcc9e875aef80395707166d4fe686015c87dc8ddbb496df57907f1d8c8b4cf484d193b877ec3026b9f65d84545b8bbd8f5b184efc21afaf90a0851500ef0b2ee69b71db6601bad3fb7b6483302133d63e4b5373c2242ea6a40b551ad506c84087227f2b2c230827e3ae9be6b69743f29281bd8da4cdf8d61e229bcde18f690207f64e9cb42301ffe02e31d34d4279444ffda10a2d7d362570c2dddc13365a30b3e4312171df946640c5a5a4bfce40c58f50234dd2cdc3302330f1dc17bc717e12f0fccedbfaaddd371f0a354361fe14b546b7399a19ded03e307787be0acb3cb95b7f2f1d557d4e44685f33e24f19b4f50d8e7e01ee70ca8b3083add8b632f45798bd64033f2d93861ba3f0c42c00e2ceac2c095ffc6564a781ded87c114fdbbb3d1f11662b3ad8a8647d7777f0b2b718fff6edff0dc1f15a7dc150ff01203193440ce7260f6de901ad7578d5a2a7d580db5a1a6d80c11d59e2f2db35af617d4b0ec7d8a9e1652f431db7c8b8a40d48268e6d8fa047295dcb5ae5ee4bb10f2902980bb539cea088d9a0898b17a3813b7d8fc65ffe91cf96fd154bdc79541ae703a93df54c41372141f0c0355169fccfa9c512dafeadec96ab31cfd7970d8328f5a200271cf5cfd22b67d060570222b59cf9aa9bb24249ee824cace67ed508b6fbcd17a5cbcaf0a40bd91b64d6a48b22d66d4d980a67959fc5d5434bd42f57bd74df69ed158ad880e1b28b7c961c6a2eb14a10a4f072ba32651ef81c5e682c87ab472e573774f28649e42b8647707c7931e9f9e7406301c8edfe06e870ec334e9746abc37b9603780a4d520c4876a5a6d91df620ce67d3164a06b6694642aed7958d95dcefd6c30c0e1120d6033823f6f6f997252bac2cc367f20b47ff354d53e02b23a681744ab5e8ff0d366226c1535f954fd02de6d71839e0e3cbaf4f1e7cbb37e4c10b8f5879f5e4055f047039126f1a3caaa4fc58bcb4a67ef8af1f52b300f3b5e53fedf003524bdfc47f1a3e63b83ac6ae414a378bb90bbb8891fa87df577a430e80658b47f99d70af6fbc095e251eaf87a0128c7124e7a7c0d9508c086340cca99f8e497709868638846e7221bc24f80fd72cfbf4fd434105f73390ff14e86764118205bca10b35e847e58f3fa514666a195d4273786c49286859442d1eb0ef6c13c0ee3d6c10e939dc2a5a81ac3bb13165b60706f65f98eb9c62ea7e11d58a5f93deb88db03a1e57479e1596c6ed97c43a5a773e0455207af60cd7f194752968308d9cbcf94a2dbee9647f6baebc7cac475f36bfa0fba3ef03a599c904d51c078d3183ea92d38655e54b1ce60ca74f722d20b32be66dec269c60f96f5038bec8124eb5bc6b28fc28eafbd16fa8c105a8e9a91e26d0f3c02ba14be51f8388b22996178f3f9239a2f54b9aa543bd6233e22fc39c5abdf5d2de588cbc2dfa657eed40e2f5e15f159998a69d54f4ede3495a5a919941dafde4826f53f2bcbfbac1907d0e477aa2f0edcbe396805941dd0f20684d33e4add9e112bfe56b9f8f52176a3300c7eea14440a3d98ddaf9f450dd2117bd38d7d8aa9e689472e31cd6874a1378b7bd049fe759af18035c574ad0fed26ca11172450bc1a630cbdf3dc7fa9accd4602cbffac83a12f54103bc5c164f60bccb75089b710230dd4f254c176719bdf5251a896dfea4cc3545999750936be7e560e673d0012e5a8e97f3e607fc01661a7c68dc39ba835ccbe05fcaad0db828110c37c2dec51cc886205a226b4a1a1c874d8e71ed17b0e913aeaff591c1cffa588af324ce4b60436e2dd2d79d6212be2ae43e0847ba388de366ddd9312d1553dec0b0be852b286762b080a3304232ea3e6093f456768edbef0ed48913eea005a8acf92ca903b2b4885c02d7b2263b7edbbefff7d5e095f23375050c983e12c112a529a28b39553faf5ef770bd779d40664e3f0c4928988c110188216142ce217ec6ec9033afa8d2b5056edb5769d32914330cb768392d3aca84e6a68a92dd13c783cf2dceaf47f4dd062658a2d9d5aab8053eb742cd62b482a8733c67e7b1cdc3c7129a589d67d9904a4e5fa5bf8e813979cd16a3f5e08fb997a26b5c8a12f9010610f1e8e5ff8cf0ccabbe366f3836012f8a321108fd55b9d91276df204a82c31444b12c163c238cc7914198766e24aad65957793fc40d32da22c496fea7044a7b2649d0b4514503b26e5d984f58921f91c143f2de6440abd84871cbb57bb42156b5cb87f35bda6af8d64f0545d1857d94fe8631be4a1a600a8e476c5a35fbd9a9abc2e661040cff0380fcce0ddf4fa71b836df95b93c8d9a3d2922cd1421f5e8ad31a39268105c0388db6aa9a650c8d28d2fa479f9e852329533e253f3f71d68f3328477115889c9ab8bf1682c1788c05de4aeb9019f816ce66a9a5f7bf13e324b92e14f573c87ddfd1677fef7bb87d15eb38caa550de4c64b6313ed7f6e4260b718ae6ceef4ef7837e44bb8c46fd827b7b6f868e4056d9774fbee3c60cd6652acff3454a1b773378472f86c724ffeba2df8a275aa9187a0324501183c32a562510b0fb2c55cb512aa4eec40b7e4e8c42d173c0b0f285f7042e6a4b53bdf00dee3e8057310ce5cc533da9d82d56eebef113221ab212e902645d111b0afa5d1ab1f6f605db6f8d9aad800a2010070c00eea3f49046cb0759130d1ea3ead08a8b5116b6e19c5198e2786cf5610a84764385000a66dcc7891a733cc47e033a4258ee6d1879e8b6a32f5a43da9c08d998a2608faabd10e42df16417638a51dbfb2c05ee9c9ca664e2a6521dd69867bbae9b45c70e7cc3b1b526ac8e2a9b86320a86865c31dac47c6c3cfb2e4141bd994acd819df3400395fa0da908820808c56f179faf243faa367fefa6265c36d0cbb498f08df00b183d52acbd275dcfc6741b6c7f2f1ec7fa139e95ed95bcb9de86dcb95d55d6ebada3bc803d3ab2b3983033c2e95fe086d911bd59ba12146844ed6b1c339feebc7216d1f471abee81867b37e30a4f4dfb8ee7d33c727e163bcacab12025fa8aa9fe6a4198f2b2349c3399eb0c882d872b44fab36e784bc5fcb9370c4a848c3a5dbd6593f12ad1bcd3246a26ab9f74d6db68c719283064cc9f09de0d5e2860a0188bdda959e8c164210c478a17ae096f34afb7a7ef642552c515f625680b994ebf091022ff8137a3736cf749d7f5836a5b3adb8a013d1d3fe935bdbab270d7911dc6db7fe83bff71a8b253bff7555217d2a3ffca409a7e413c970ade72805934cea17242a9d2b6f9da76aef25c4966ef824af8076b9d7f8b2d0aa5a1651ee364c2ab091cbc20d0b55a97f3885166cbda23e7553a518cb402c9ce55f33395b47e195a22f1f33785b4b33042576e9adad9c47d5fb44e7cd7cd1d65f896eaf90d373528c3bce2dcc3f5412b87b416a9f8517166be8cec9b55196b4ea8758c7f0e8207334ef019ecbef23b31b436e9987de82cdd205966f558a4dc34e2ce81a08c45ace2fb0f1afcf52c49a79f8cb75b0c70ed7d18864d9c02eeb3703bdc05d242baa643dacb899795b438ec1eebb976a178c6b72590a6736ee41d339560f99ea2e8303892fa56d883cd3b057a88d2c22b888ef49219634a98509de25b57d8ff6b49289d8f6187eb5006162c74b7556361b373c5ae735bb9363421f3ead6fa28d13aea78f80e1009658a00eda3528f70b2c1a5f197ead490079b12db1a3d5a7ff13a66154e21274f416da1569aa53fb3efe9dac83c7d9d066a99a27e130d19f6587c221f067143feacb72567aabb1b20efdeda9fc9da53d1289c082e63998ae71d3fdb8882a6a9c921a7554c111f9e1392fe3767b3afe60bc4ba5bfac85c942d5068bf5a5d00466132b58cb06bcfa3c20cda391bcc2bff430178de3bbed1941e5baaee5016999f23791481dc8ab7f81484c54b6c4b35ac129fe562ece55602a7b17786ea29079081be7a49b152575ef4cc741570be94096b7f8ab85d8334df12f3f512dc29b565f3ee08b6518d6c5e605f27f350164721c7dcb20ca50f1cbd648dda174f659e3b9cb1b30b56afc74e443a436038150b871a53be645e562ade82d64c92ca5f0e2937c37982deec32ee6eef3a0abfc006d6446cb64a7ac771ef03de8d0a78c694566dabe7460fb1ede7409d5cf330ac9103052527552fe6766866e8f83a86778046b5ed3074b1905d6436e78d6708976943f632125d705e4034753dcf9859fa8a2cdf07f18dba988990984f4041b6cccd408035969afed056806f33760435a20b7d0985e8eb93f48cf8e28352f869cb517b32e6ea6e424f64ce2a168edff2d58a5fe1d314d57d26dc6375ad9999bb1feadf4ac8756a671af8ae8893faae864e9868354f3c5c214889987f1853694d467e56e78e12a5dbf83b50aee8bd485d30b67256991afca727d3907a4c2dafa83ae3ca4b894d92a26fae71319b213600c6c897f1381fdba7671d6b1b2b0caf507033401fcab5e8dc10c79ce46de80744de739105e67c454ce2f58ebd375616fb55fe75445ec8fdcff205c6915b22476ef8faf01ced4774d9f34bca47a21d82029ab0e119050164c4b61b3964e1d9df2085389001e5d71528d2412072c9196942390d406a518ff6ef848931f0593a21b8a0b46199af749d0e303ab59e468e54eb51a4224f4ed5aa94315cb1dad28d314531b5379fee9a779b60f18a6ac47ab01e71ac03970ea21f19fe99230db04d2f771f9f9af2462d00b02acb2a53c1abba00dd40df1d117ad7da4d82a47303a9769c635a71e555b33d90d3c71798dbd899023fc3db695f8fec503f85cd89acd3e9b493c8b75b9ac935b8e8593aa8156ace5a36755a94087ddffcc47b28729ef972f36608bb6495915109b349e35babf05e74b2132aba4c5974ce833501fbc62ccfc9f16e1e07041f3d607221893f29c00c01f4e3e66d0db8bfcc9d332226d71cd3bf7a7b4886cc8877bda3e78b852815c9c01eaed9be4402598db2962ab24ec581a8d64337f7e0113eedac876fe3229368ac9bffe6515ed3f37d38bb47b224a01d1eab1cd9be9da7336981495dcb1c86e46c6b60f216ee560978b044a6886273658e2cbaabbfb3d89d7966aeddf1d26b7a15e0ec85c15dc2529ff57e11d7b5a714098d7ab50dd9cbb59bcad50921ffab98d5e1e91494b1ebc6f90b44eb6f9b39e6612ce0dbb833508a7c3a767d1881ab1ced794870a39d993a2feff5ce03cb37f634ef389965f0c69453af0c2108e6523e2036bd5a24fba8c4a11ebbe1fbd69e52cb80e2b39d2674f64db26719ccf427670061e3b2a2c1ba60ad7794e44bc3b29abcebb48f52b365a1b9f165e8147afa704134c7ad6f0c062db03f0c3e06c268a39cfe7b528c67e3b735ebb257d5e4f76ac59a24d30d999c172c41c11c6c99df4ce92e16bd056215f148cb6897a4f4f32253178ac59fd52b1dff6b3be299bf2db37ef6c528c8e77050a664c1993476d4a4f9efa2b2d8461d3e2dd7fbb5ad3cd7edb40a4897adb54e82cc4a0f6f92b6dcae073964481da55db1f762a025ccaefb47adee9e847df87f28695d8f894850e9fd532e8fac8af7baab6fe7fbad64037f87ade3b6abcdbdb0a15067c1cecd5c1575c9bdf85d6da085f910a8f50de593c9d7259f1dc27272494fad1a1e82afa4bf4bba55a7ba9ade4d54480b551fd53d3d3b9dadc6a28f86710b9ba6b2453bfe62cfde907879ad3c6d87d3a6b657addb48cd7fd4a23a587c4d0f44d736323c908f9045bf304a2dd7794ba21cd181b49b9ace69a49c91c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
 </div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -238,7 +238,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://light-century.github.io/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/",
+                text: "https://light-century.github.io/2022/10/10/Dairy/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -250,13 +250,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://light-century.github.io/2020/01/29/luogu-P6015-%E3%80%90-CSGRound3-%E6%B8%B8%E6%88%8F%E3%80%91/";
-            const title         = "「luogu P6015 【[CSGRound3]游戏】」";
-            const excerpt       = `双指针做法
-坑点:贪心是错误的。
-举例 5 1 3 3
-，k=6,可以发现，按贪心来取，X=6时，前缀和最大可以取到（5+1）6，而后面也可以取到(
-3+3）6，而第一段只取5时，第二段最大只能取到4，所以此时有必胜策略，故贪...`;
+            const hostUrl       = "https://light-century.github.io/2022/10/10/Dairy/";
+            const title         = "「Dairy_1」";
+            const excerpt       = `Here's something encrypted, password is required to continue reading.`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -275,10 +271,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="tag">算法笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+                    <a class="tag-none-link" href="/tags/%E9%97%B2%E8%AF%9D/" rel="tag">闲话</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-10-08T05:17:18.621Z" itemprop="dateModified">最后编辑：2022-10-08</time>
+                    <time datetime="2022-10-10T08:16:54.668Z" itemprop="dateModified">最后编辑：2022-10-10</time>
                 </div>
             </div>
         </footer>
@@ -287,13 +283,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CF918A 【Eleven】" href="/2020/01/21/CF918A-【Eleven】/">&lt; 上一篇</a>
+                <a title=" My start" href="/2022/10/08/My-story/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" luogu P5736 【【深基7.例2】质数筛】" href="/2020/02/05/luogu-P5736-【【深基7-例2】质数筛】/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
