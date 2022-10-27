@@ -179,6 +179,7 @@
             </div>
             
             
+            
             <hr />
             <div itemprop="articleBody"><p>看题解区几乎都是gcd的做法,那我来写一发取模运算吧...</p>
 <p>不难想到，分母数量越少，越可能被整除，仔细观察可发现，当分式为 <span
@@ -543,20 +544,5 @@ class="math inline">\(a*b%mod=(a%mod)*b%mod\)</span>,不难写出本题代码。
 <!-- Extra support for third-party plguins  -->
 
 
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-</body>
+    </body>
 </html>
