@@ -16,16 +16,16 @@
   
     <meta name="keywords" content="闲话" />
   
-  <meta name="description" content="$$  希望自己不要忘记自己曾经的热爱 更希望自己不要忘记为什么而来 $$">
+  <meta name="description" content="\[ \Large 希望自己不要忘记自己曾经的热爱 \\ 更希望自己不要忘记为何而来 \]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三点闲话">
 <meta property="og:url" content="https://light-century.github.io/2022/11/04/%E4%B8%89%E7%82%B9%E9%97%B2%E8%AF%9D/index.html">
 <meta property="og:site_name" content="Light_Cone&#39;s blog">
-<meta property="og:description" content="$$  希望自己不要忘记自己曾经的热爱 更希望自己不要忘记为什么而来 $$">
+<meta property="og:description" content="\[ \Large 希望自己不要忘记自己曾经的热爱 \\ 更希望自己不要忘记为何而来 \]">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
 <meta property="article:published_time" content="2022-11-04T14:39:26.000Z">
-<meta property="article:modified_time" content="2022-11-04T14:41:34.449Z">
+<meta property="article:modified_time" content="2022-11-04T14:44:20.285Z">
 <meta property="article:author" content="Light_Cone">
 <meta property="article:tag" content="闲话">
 <meta name="twitter:card" content="summary">
@@ -162,7 +162,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        42
+                        52
                     
                     字
                 </li>
@@ -173,16 +173,18 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1667572894449"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1667573060285"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>$$ </p>
-<p>希望自己不要忘记自己曾经的热爱</p>
-<p>更希望自己不要忘记为什么而来</p>
-<p>$$</p>
+            <div itemprop="articleBody"><p><span class="math display">\[
+\Large
+希望自己不要忘记自己曾经的热爱
+\\
+更希望自己不要忘记为何而来
+\]</span></p>
 </div>
         </div>
         
@@ -246,10 +248,12 @@
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "https://light-century.github.io/2022/11/04/%E4%B8%89%E7%82%B9%E9%97%B2%E8%AF%9D/";
             const title         = "「三点闲话」";
-            const excerpt       = `$$ 
+            const excerpt       = `\[
+\Large
 希望自己不要忘记自己曾经的热爱
-更希望自己不要忘记为什么而来
-$$
+\\
+更希望自己不要忘记为何而来
+\]
 `;
             let _URL;
             switch (dest) {
@@ -272,7 +276,7 @@ $$
                     <a class="tag-none-link" href="/tags/%E9%97%B2%E8%AF%9D/" rel="tag">闲话</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-11-04T14:41:34.449Z" itemprop="dateModified">最后编辑：2022-11-04</time>
+                    <time datetime="2022-11-04T14:44:20.285Z" itemprop="dateModified">最后编辑：2022-11-04</time>
                 </div>
             </div>
         </footer>
@@ -540,5 +544,20 @@ $$
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
