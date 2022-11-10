@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
 <meta property="article:published_time" content="2022-11-10T14:14:56.000Z">
-<meta property="article:modified_time" content="2022-11-10T15:18:50.337Z">
+<meta property="article:modified_time" content="2022-11-10T15:20:20.832Z">
 <meta property="article:author" content="Light_Cone">
 <meta property="article:tag" content="算法学习笔记">
 <meta name="twitter:card" content="summary">
@@ -162,7 +162,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.44K
+                        ~2.45K
                     
                     字
                 </li>
@@ -173,7 +173,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1668093530337"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1668093620832"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -233,12 +233,15 @@ class="math inline">\((n)_p\)</span>的其他位所表示的值皆是p的倍数,
 class="math inline">\((n)_k\quad mod\quad p = \sum b_j\times
 p^{j-1}\quad mod\quad p=b_1\)</span></p>
 <p>其次,对于<span
-class="math inline">\((n)_p来讲,在整数意义下\frac{(n)_p)}{p}=(n)_p=\sum
+class="math inline">\((n)_p来讲,在整数意义下\frac{(n)_p}{p}=(n)_p=\sum
 \frac{b_j\times
 p^{j-1}}{p}=(\lfloor\frac{n}{p}\rfloor)_p\)</span>,我们可以理解为<span
 class="math inline">\((n)_p\)</span>在除以<span
-class="math inline">\(p\)</span>后整个表示删除了最后一位。 - 例如:<span
-class="math inline">\(\frac{(1000101)_2}{2}=(100010)_2\)</span></p>
+class="math inline">\(p\)</span>后整个表示删除了最后一位。</p>
+<ul>
+<li>例如:<span
+class="math inline">\(\frac{(1000101)_2}{2}=(100010)_2\)</span></li>
+</ul>
 <p>由上两条性质,我们不难发现,k进制转到p进制其实只需不断使用第一个性质,不断取出每一位并进行转化,
 - 即<span class="math inline">\(b_j=\frac{(n)_k}{(p)_k^{j-1}}\quad
 mod\quad (p)_k\quad=\frac{(n)_k \quad mod\quad
@@ -353,7 +356,7 @@ class="math inline">\((n)_k\)</span>末尾增添了一位0。此时将当前位�
                     <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">算法学习笔记</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-11-10T15:18:50.337Z" itemprop="dateModified">最后编辑：2022-11-10</time>
+                    <time datetime="2022-11-10T15:20:20.832Z" itemprop="dateModified">最后编辑：2022-11-10</time>
                 </div>
             </div>
         </footer>
@@ -625,5 +628,20 @@ class="math inline">\((n)_k\)</span>末尾增添了一位0。此时将当前位�
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
