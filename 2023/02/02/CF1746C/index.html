@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="../images/logo.png">
   
-  <title>关于空间内n点中两点曼哈顿距离的最大问题 | Light_Cone&#39;s blog</title>
+  <title>CF1746C | Light_Cone&#39;s blog</title>
   <meta name="author" content="Light_Cone" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -14,20 +14,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="算法学习笔记" />
+    <meta name="keywords" content="luogu, 算法学习笔记, 题解" />
   
-  <meta name="description" content="给定\(d\)维空间的 \(n\) 个点，求\(max\{dist_{a_i,a_j}\}\) 关于d的值很小的情况  对于n维空间内的两点\(\alpha&#x3D;(a_1,\ldots,a_n)\),\(\beta&#x3D;(b_1,\ldots,b_n)\),其曼哈顿距离为\(\sum_{i&#x3D;1}^{d}|a_i-b_i|\),显然地,对于每一对\(|a_i-b_i|\),其必等于\(\max(a_i">
+  <meta name="description" content="Problem  题意：给定一个\(n\)的排列，共有\(n\)次操作，第\(i\)次操作使得排列的非空后缀的元素分别增加\(i\)，使得序列中的逆序对数量最少。 数据范围 \(1\le n \le {10}^5,1 \le a_i \le n,\sum n\le 2 \times{10}^5\) # Solution 不妨考虑逆序对的定义:\(i&gt;j\)且\(a_i&lt;a_j">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于空间内n点中两点曼哈顿距离的最大问题">
-<meta property="og:url" content="https://light-century.github.io/2022/10/26/%E5%85%B3%E4%BA%8E%E7%A9%BA%E9%97%B4%E5%86%85n%E7%82%B9%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="CF1746C">
+<meta property="og:url" content="https://light-century.github.io/2023/02/02/CF1746C/index.html">
 <meta property="og:site_name" content="Light_Cone&#39;s blog">
-<meta property="og:description" content="给定\(d\)维空间的 \(n\) 个点，求\(max\{dist_{a_i,a_j}\}\) 关于d的值很小的情况  对于n维空间内的两点\(\alpha&#x3D;(a_1,\ldots,a_n)\),\(\beta&#x3D;(b_1,\ldots,b_n)\),其曼哈顿距离为\(\sum_{i&#x3D;1}^{d}|a_i-b_i|\),显然地,对于每一对\(|a_i-b_i|\),其必等于\(\max(a_i">
+<meta property="og:description" content="Problem  题意：给定一个\(n\)的排列，共有\(n\)次操作，第\(i\)次操作使得排列的非空后缀的元素分别增加\(i\)，使得序列中的逆序对数量最少。 数据范围 \(1\le n \le {10}^5,1 \le a_i \le n,\sum n\le 2 \times{10}^5\) # Solution 不妨考虑逆序对的定义:\(i&gt;j\)且\(a_i&lt;a_j">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
-<meta property="article:published_time" content="2022-10-26T09:54:44.000Z">
-<meta property="article:modified_time" content="2022-10-26T10:15:57.582Z">
+<meta property="article:published_time" content="2023-02-02T14:09:35.000Z">
+<meta property="article:modified_time" content="2023-02-02T14:10:13.863Z">
 <meta property="article:author" content="Light_Cone">
 <meta property="article:tag" content="算法学习笔记">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="luogu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://light-century.github.io/images/logo.png">
   
@@ -146,15 +148,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2022/10/26/%E5%85%B3%E4%BA%8E%E7%A9%BA%E9%97%B4%E5%86%85n%E7%82%B9%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2023/02/02/CF1746C/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">关于空间内n点中两点曼哈顿距离的最大问题</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CF1746C</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2022-10-26T09:54:44.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-26</time></li>
+                <li><time datetime="2023-02-02T14:09:35.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-02-02</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Light_Cone</span>
                 </li>
@@ -162,7 +164,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        1341
+                        1078
                     
                     字
                 </li>
@@ -173,37 +175,40 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1666779357582"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1675347013863"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h2 id="给定d维空间的-n-个点求maxdist_a_ia_j">给定<span
-class="math inline">\(d\)</span>维空间的 <span
-class="math inline">\(n\)</span> 个点，求<span
-class="math inline">\(max\{dist_{a_i,a_j}\}\)</span></h2>
-<h3 id="关于d的值很小的情况">关于d的值很小的情况</h3>
+            <div itemprop="articleBody"><h1 id="problem">Problem</h1>
 <ul>
-<li><p>对于n维空间内的两点<span
-class="math inline">\(\alpha=(a_1,\ldots,a_n)\)</span>,<span
-class="math inline">\(\beta=(b_1,\ldots,b_n)\)</span>,其曼哈顿距离为<span
-class="math inline">\(\sum_{i=1}^{d}|a_i-b_i|\)</span>,显然地,对于每一对<span
-class="math inline">\(|a_i-b_i|\)</span>,其必等于<span
-class="math inline">\(\max(a_i-b_i,b_i-a_i)\)</span></p></li>
-<li><p>由上可得,<span class="math inline">\(dist_{\alpha,\beta}=\max
-\{\sum_{p_i \in (-1,1)}^dp_i(a_i-b_i)\}=\max \{\sum_{p_i \in
-(-1,1)}^dp_ia_i-\sum_{p_i \in (-1,1)}^dp_ib_i\}\)</span></p></li>
-<li><p>由此可知,对于<span
-class="math inline">\(\alpha,\beta\)</span>的曼哈顿距离,因为符号可以为正为负，共存在<span
-class="math inline">\(2^d\)</span>种情况.我们将每一种符号进行枚举,令当前的符号状态压缩为k,令<strong>f[k][i]为i在k情况下的贡献值</strong>,由第二条可推出,k情况下的空间两点最大值即为<span
-class="math inline">\(i \in
-[1,n],max\{f[k][i]\}-min\{f[k][i]\}\)</span></p></li>
-<li><p>由第三条,我们枚举每一个k,求出k种情况的最大值即为答案.<span
-class="math inline">\(ans=\max\{cnt_i\}(i \in [1,n])\)</span></p></li>
+<li><p>题意：给定一个<span
+class="math inline">\(n\)</span>的排列，共有<span
+class="math inline">\(n\)</span>次操作，第<span
+class="math inline">\(i\)</span>次操作使得排列的非空后缀的元素分别增加<span
+class="math inline">\(i\)</span>，使得序列中的逆序对数量最少。</p></li>
+<li><p>数据范围 <span class="math inline">\(1\le n \le {10}^5,1 \le a_i
+\le n,\sum n\le 2 \times{10}^5\)</span> # Solution
+不妨考虑逆序对的定义:<span class="math inline">\(i&gt;j\)</span>且<span
+class="math inline">\(a_i&lt;a_j\)</span>。</p></li>
 </ul>
-<h2 id="code">Code</h2>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> ans=<span class="number">-0x7ffffff</span>,n,d,f[<span class="number">1000010</span>][<span class="number">6</span>],p[<span class="number">1000010</span>][<span class="number">20</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;d);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=d;j++)</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;f[i][j]);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;(<span class="number">1</span>&lt;&lt;d);k++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=d;j++)</span><br><span class="line">    p[i][k]+=(k&amp;(<span class="number">1</span>&lt;&lt;(j<span class="number">-1</span>)))?f[i][j]:-f[i][j];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;(<span class="number">1</span>&lt;&lt;d);k++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> maxn=<span class="number">-0x7ffffff</span>,minn=<span class="number">0x7ffffff</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        maxn=<span class="built_in">max</span>(maxn,p[i][k]),minn=<span class="built_in">min</span>(minn,p[i][k]);</span><br><span class="line">        ans=<span class="built_in">max</span>(ans,maxn-minn);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>进一步思考选择一个后缀加上<span
+class="math inline">\(i\)</span>的影响，不难想到对于所选择的后缀内部，其逆序对贡献不变，而未被选择的部分则会改变其贡献，且对后缀进行操作逆序对数量一定不大于操作前的数量。</p>
+<p>我们不妨差分的去想，若使第<span
+class="math inline">\(i\)</span>位的元素所贡献的逆序对数量最少，则我们需要使<span
+class="math inline">\(a_j\le a_i(1 \le
+j&lt;i)\)</span>。也就是说，第<span
+class="math inline">\(k\)</span>次操作在对<span
+class="math inline">\(a_i\)</span>为起始位置的后缀，会使得<span
+class="math inline">\(\max {a_j}-a_i\leftarrow\max a_j-a_i-k(1\le
+j&lt;i)\)</span>。对于<span class="math inline">\(a_i\)</span>，其<span
+class="math inline">\(\max {a_j}-a_i\le
+n-a_i\)</span>，故我们直接将第<span
+class="math inline">\(n-a_i\)</span>次操作选在<span
+class="math inline">\(i\)</span>的位置即可。</p>
+<p>时间复杂度<span class="math inline">\(O(n)\)</span>。
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fori(i,n) for(int i=1;i&lt;=n;i++)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">int</span> t;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    vector &lt;<span class="type">int</span>&gt; <span class="built_in">a</span>(n+<span class="number">1</span>),<span class="built_in">ans</span>(n+<span class="number">1</span>);</span><br><span class="line">    fori(i,n) cin&gt;&gt;a[i],ans[n-a[i]+<span class="number">1</span>]=i;</span><br><span class="line">    fori(i,n) cout&lt;&lt;ans[i]&lt;&lt;<span class="string">&quot; \n&quot;</span>[i==n];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>)-&gt;<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin&gt;&gt;t;</span><br><span class="line">    <span class="keyword">while</span>(t--)</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </div>
         </div>
         
@@ -253,7 +258,7 @@ class="math inline">\(ans=\max\{cnt_i\}(i \in [1,n])\)</span></p></li>
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://light-century.github.io/2022/10/26/%E5%85%B3%E4%BA%8E%E7%A9%BA%E9%97%B4%E5%86%85n%E7%82%B9%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98/",
+                text: "https://light-century.github.io/2023/02/02/CF1746C/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -265,12 +270,12 @@ class="math inline">\(ans=\max\{cnt_i\}(i \in [1,n])\)</span></p></li>
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://light-century.github.io/2022/10/26/%E5%85%B3%E4%BA%8E%E7%A9%BA%E9%97%B4%E5%86%85n%E7%82%B9%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98/";
-            const title         = "「关于空间内n点中两点曼哈顿距离的最大问题」";
-            const excerpt       = `给定\(d\)维空间的 \(n\) 个点，求\(max\{dist_{a_i,a_j}\}\)
-关于d的值很小的情况
+            const hostUrl       = "https://light-century.github.io/2023/02/02/CF1746C/";
+            const title         = "「CF1746C」";
+            const excerpt       = `Problem
 
-对于n维空间内的两点\(\alpha=(a_1,\ldots,a_n)\),\(\beta=(b_1,\ld...`;
+题意：给定一个\(n\)的排列，共有\(n\)次操作，第\(i\)次操作使得排列的非空后缀的元素分别增加\(i\)，使得序列中的逆序对数量最少。
+数据范围 \(1\le n \le {10}^5,1 \le a...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -289,10 +294,10 @@ class="math inline">\(ans=\max\{cnt_i\}(i \in [1,n])\)</span></p></li>
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">算法学习笔记</a>
+                    <a class="tag-none-link" href="/tags/luogu/" rel="tag">luogu</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">算法学习笔记</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-10-26T10:15:57.582Z" itemprop="dateModified">最后编辑：2022-10-26</time>
+                    <time datetime="2023-02-02T14:10:13.863Z" itemprop="dateModified">最后编辑：2023-02-02</time>
                 </div>
             </div>
         </footer>
@@ -301,13 +306,9 @@ class="math inline">\(ans=\max\{cnt_i\}(i \in [1,n])\)</span></p></li>
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 一点闲话" href="/2022/10/16/一点闲话/">&lt; 上一篇</a>
+                <a title=" 四点闲话" href="/2022/12/31/四点闲话/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 两点闲话" href="/2022/10/30/两点闲话/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
