@@ -16,16 +16,16 @@
   
     <meta name="keywords" content="算法学习笔记" />
   
-  <meta name="description" content="由于本文为入门导向，故某些内容介绍较为浅薄，仅供初级理解使用    关于进制  何为进制？进制是表示数的方法。 那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式而改变的，而进制，就可以看作一些对于一个值的不同的表达方式。 日常中，我们对于10进制与60进制的使用比较常见，但随着计算机理论与技">
+  <meta name="description" content="文章写的很菜，仅供入门理解（    关于进制  何为进制？进制是表示数的方法。 那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式而改变的，而进制，就可以看作一些对于一个值的不同的表达方式。 日常中，我们对于 \(10\) 进制与 \(60\) 进制的使用比较常见，但随着计算机理论与技术的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈进制转换">
 <meta property="og:url" content="https://light-century.github.io/2022/11/10/%E6%B5%85%E8%B0%88%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/index.html">
 <meta property="og:site_name" content="Light_Cone&#39;s blog">
-<meta property="og:description" content="由于本文为入门导向，故某些内容介绍较为浅薄，仅供初级理解使用    关于进制  何为进制？进制是表示数的方法。 那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式而改变的，而进制，就可以看作一些对于一个值的不同的表达方式。 日常中，我们对于10进制与60进制的使用比较常见，但随着计算机理论与技">
+<meta property="og:description" content="文章写的很菜，仅供入门理解（    关于进制  何为进制？进制是表示数的方法。 那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式而改变的，而进制，就可以看作一些对于一个值的不同的表达方式。 日常中，我们对于 \(10\) 进制与 \(60\) 进制的使用比较常见，但随着计算机理论与技术的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
 <meta property="article:published_time" content="2022-11-10T14:14:56.000Z">
-<meta property="article:modified_time" content="2022-11-10T15:20:20.832Z">
+<meta property="article:modified_time" content="2023-03-22T05:00:00.285Z">
 <meta property="article:author" content="Light_Cone">
 <meta property="article:tag" content="算法学习笔记">
 <meta name="twitter:card" content="summary">
@@ -159,7 +159,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.45K
+                        ~2.57K
                     
                     字
                 </li>
@@ -170,7 +170,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1668093620832"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1679461200285"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -179,7 +179,7 @@
             <div itemprop="articleBody"><table>
 <tbody>
 <tr class="odd">
-<td>由于本文为入门导向，故某些内容介绍较为浅薄，仅供初级理解使用</td>
+<td>文章写的很菜，仅供入门理解（</td>
 </tr>
 </tbody>
 </table>
@@ -187,23 +187,30 @@
 <ul>
 <li>何为进制？进制是表示数的方法。</li>
 <li>那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式而改变的，而进制，就可以看作一些对于一个值的不同的表达方式。</li>
-<li>日常中，我们对于10进制与60进制的使用比较常见，但随着计算机理论与技术的发展，二进制，八进制，十六进制等逐渐进入人们的视野当中。</li>
+<li>日常中，我们对于 <span class="math inline">\(10\)</span> 进制与
+<span class="math inline">\(60\)</span>
+进制的使用比较常见，但随着计算机理论与技术的发展，二进制，八进制，十六进制等逐渐进入人们的视野当中。</li>
 </ul>
 <h1 id="进制的表示">进制的表示</h1>
-<p>我们日常中使用的进制通常为10进制,例如<span
-class="math inline">\((114514)_{10},(1919810)_{10}\)</span>，这些数有什么特点？十进制有什么特点？</p>
-<p>根据我们日常的使用计算来说，不难发现十进制的特点其实是逢十进一。也就是说，对于十进制数来讲，它的每一位最大能表示的范围是<span
+<p>我们日常中使用的进制通常为 <span class="math inline">\(10\)</span>
+进制,例如 <span
+class="math inline">\((114514)_{10},(1919810)_{10}\)</span>
+，这些数有什么特点？十进制有什么特点？</p>
+<p>根据我们日常的使用计算来说，不难发现十进制的特点其实是逢十进一。也就是说，对于十进制数来讲，它的每一位最大能表示的范围是
+<span
 class="math inline">\([0,9]\)</span>,而超出这个范围时则需向前进位。</p>
-<p>由此性质，我们观察十进制数，不难得出上文的数字其实是<span
-class="math inline">\(114514=1\times10^5+1\times10^4+4\times10^3+5\times10^2+1\times10^1+4\times10^0\)</span>,显然的，对于第<span
-class="math inline">\(i\)</span>位十进制,它所对应的值即为<span
+<p>由此性质，我们观察十进制数，不难得出上文的数字其实是 <span
+class="math inline">\(114514=1\times10^5+1\times10^4+4\times10^3+5\times10^2+1\times10^1+4\times10^0\)</span>
+,显然的，对于第<span
+class="math inline">\(i\)</span>位十进制,它所对应的值即为 <span
 class="math inline">\(10^{i-1}\)</span>。</p>
 <hr />
 <p>根据十进制的定义推广,不难得出,对于k进制而言,<span
 class="math inline">\((n)_{k}=\sum a_i\times k^{i-1}\)</span></p>
 <ul>
-<li>令k=2,<span class="math inline">\((n)_{2}=\sum a_i\times
-2^{i-1}\)</span>即是二进制下的表达形式</li>
+<li>令 <span class="math inline">\(k=2\)</span>,<span
+class="math inline">\((n)_{2}=\sum a_i\times 2^{i-1}\)</span>
+即是二进制下的表达形式</li>
 </ul>
 <h1 id="关于进制转换">关于进制转换</h1>
 <ul>
@@ -212,51 +219,57 @@ class="math inline">\((n)_{k}=\sum a_i\times k^{i-1}\)</span></p>
 <li><p>我们依托进制来表示数,那数进制的转化也必定依托于进制与进制之间的关系。</p></li>
 </ul>
 <h2 id="进制与进制间的关系">进制与进制间的关系</h2>
-<p>考虑一个值n,显然存在<span
-class="math inline">\((n)_k=(n)_p\)</span>,因为n的值没有改变,改变的仅仅是n的表现形式。</p>
+<p>考虑一个值n,显然存在 <span
+class="math inline">\((n)_k=(n)_p\)</span>,因为n的值没有改变,改变的仅仅是
+<span class="math inline">\(n\)</span> 的表现形式。</p>
 <ul>
-<li>那假设我们拥有<span
-class="math inline">\((n)_k\)</span>,如何去得出<span
-class="math inline">\((n)_p\)</span>呢?</li>
+<li>那假设我们已知 <span class="math inline">\((n)_k\)</span>,如何去得出
+<span class="math inline">\((n)_p\)</span> 呢?</li>
 </ul>
 <p>根据定义,<span class="math inline">\((n)_k=\sum a_i\times
 k^{i-1},(n)_p=\sum b_j\times
 p^{j-1}\)</span>,不难想到我们可以将其还原为值再进行进制表示。</p>
-<p>如何去获取<span
-class="math inline">\((n)_p\)</span>每一位的值呢？</p>
-<p>显然的,对于<span class="math inline">\((n)_p\)</span>的第一位,由<span
-class="math inline">\((n)_p=\sum b_j\times p^{j-1}\)</span>可知,<span
-class="math inline">\((n)_p\)</span>的其他位所表示的值皆是p的倍数,故<span
-class="math inline">\((n)_k\quad mod\quad p = \sum b_j\times
-p^{j-1}\quad mod\quad p=b_1\)</span></p>
-<p>其次,对于<span
-class="math inline">\((n)_p来讲,在整数意义下\frac{(n)_p}{p}=(n)_p=\sum
+<p>如何去取出 <span class="math inline">\((n)_p\)</span>
+每一位的值呢？</p>
+<p>显然的,对于 <span class="math inline">\((n)_p\)</span> 的首位,由
+<span class="math inline">\((n)_p=\sum b_j\times p^{j-1}\)</span> 可知,
+<span class="math inline">\((n)_p\)</span>
+的其他位所表示的值皆是p的倍数,故 <span class="math inline">\((n)_k
+\operatorname{mod} p = \sum b_j\times p^{j-1} \operatorname{mod}
+p=b_1\)</span></p>
+<p>其次,对于 <span class="math inline">\((n)_p\)</span>
+来讲,在整数意义下 <span class="math inline">\(\frac{(n)_p}{p}=(n)_p=\sum
 \frac{b_j\times
-p^{j-1}}{p}=(\lfloor\frac{n}{p}\rfloor)_p\)</span>,我们可以理解为<span
-class="math inline">\((n)_p\)</span>在除以<span
-class="math inline">\(p\)</span>后整个表示删除了最后一位。</p>
+p^{j-1}}{p}=(\lfloor\frac{n}{p}\rfloor)_p\)</span>,我们可以理解为 <span
+class="math inline">\((n)_p\)</span> 在除以 <span
+class="math inline">\(p\)</span> 后整个表示删除了最后一位。</p>
 <ul>
-<li>例如:<span
+<li>例如: <span
 class="math inline">\(\frac{(1000101)_2}{2}=(100010)_2\)</span></li>
 </ul>
-<p>由上两条性质,我们不难发现,k进制转到p进制其实只需不断使用第一个性质,不断取出每一位并进行转化,
-- 即<span class="math inline">\(b_j=\frac{(n)_k}{(p)_k^{j-1}}\quad
-mod\quad (p)_k\quad=\frac{(n)_k \quad mod\quad
+<p>由上两条性质,我们不难发现,<span class="math inline">\(k\)</span>
+进制转到 <span class="math inline">\(k\)</span>
+进制其实只需不断使用第一个性质,不断取出每一位并进行转化, - 即 <span
+class="math inline">\(b_j=\frac{(n)_k}{(p)_k^{j-1}} \operatorname{mod}
+(p)_k\quad=\frac{(n)_k \operatorname{mod}
 (p)_k^j}{(p)_k^{j-1}}\)</span></p>
-<p>在二进制中,结合位运算可以快速求出n的某一位的值。</p>
+<p>在二进制中,结合位运算可以快速求出 <span
+class="math inline">\(n\)</span> 的某一位的值。</p>
 <h2 id="中介转化">中介转化</h2>
 <p>鉴于某些进制的互相转化是十分困难的,我们此时可以采用中间进制沟通两个不同进制间进行转化。以十进制为中间进制为例。</p>
 <p>结合上文的性质显然可以得出这份代码。</p>
-<p>值得留意的是,<span
-class="math inline">\(ans=ans*a+something\)</span>应当如何去理解。</p>
+<p>值得留意的是, <span
+class="math inline">\(ans=ans*a+something\)</span> 应当如何去理解。</p>
 <p>我们不难从数学上看出,出于乘法分配律,在多次连乘中,<span
-class="math inline">\(a_i的系数是k^{i-1}\)</span>,故算法的正确性得证。</p>
+class="math inline">\(a_i\)</span> 的系数是 <span
+class="math inline">\(k^{i-1}\)</span>,故算法的正确性得证。</p>
 <p>如何从直观的从进制数的角度来解释呢?</p>
-<p>前文提到<span
-class="math inline">\(\frac{(n)_k}{k}\)</span>的效果相当于将<span
-class="math inline">\((n)_k\)</span>的最后一位删除,那相反的,<span
-class="math inline">\((n)_k\times k\)</span>则可以看作<span
-class="math inline">\((n)_k\)</span>末尾增添了一位0。此时将当前位置的值再加到新的变量中,显然是正确的。</p>
+<p>前文提到 <span class="math inline">\(\frac{(n)_k}{k}\)</span>
+的效果相当于将 <span class="math inline">\((n)_k\)</span>
+的最后一位删除,那相反的,<span class="math inline">\((n)_k\times
+k\)</span> 则可以看作 <span class="math inline">\((n)_k\)</span>
+末尾增添了一位 <span
+class="math inline">\(0\)</span>。此时将当前位置的值再加到新的变量中,显然是正确的。</p>
 <p>Code: <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="type">char</span> s[<span class="number">110</span>],cnt[<span class="number">101</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> a,b,c,l,ans,r;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lld%lld&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s);</span><br><span class="line">    l=<span class="built_in">strlen</span>(s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;l;i++)</span><br><span class="line">    ans=ans*a+(s[i]&gt;<span class="string">&#x27;9&#x27;</span>?s[i]-<span class="string">&#x27;a&#x27;</span>+<span class="number">10</span>:s[i]-<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    <span class="keyword">while</span>(ans)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> mod=ans%b;</span><br><span class="line">        cnt[++r]=(mod&lt;<span class="number">10</span>)?mod+<span class="string">&#x27;0&#x27;</span>:mod+<span class="string">&#x27;a&#x27;</span><span class="number">-10</span>;</span><br><span class="line">        ans/=b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=r;i&gt;<span class="number">0</span>;i--)</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,cnt[i]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </div>
         </div>
@@ -324,14 +337,14 @@ class="math inline">\((n)_k\)</span>末尾增添了一位0。此时将当前位�
             const excerpt       = `
 
 
-由于本文为入门导向，故某些内容介绍较为浅薄，仅供初级理解使用
+文章写的很菜，仅供入门理解（
 
 
 
 关于进制
 
 何为进制？进制是表示数的方法。
-那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的...`;
+那何为数呢？数即是一个值。例如面对某一定体积的物体，你可以使用多种表达方式去描述它的大小，但它的固有体积是一定的，是不随表达方式...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -353,7 +366,7 @@ class="math inline">\((n)_k\)</span>末尾增添了一位0。此时将当前位�
                     <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">算法学习笔记</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-11-10T15:20:20.832Z" itemprop="dateModified">最后编辑：2022-11-10</time>
+                    <time datetime="2023-03-22T05:00:00.285Z" itemprop="dateModified">最后编辑：2023-03-22</time>
                 </div>
             </div>
         </footer>
