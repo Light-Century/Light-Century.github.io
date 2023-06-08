@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="../images/logo.png">
   
-  <title>Notice | Light_Cone&#39;s blog</title>
+  <title>练习赛 1 | Light_Cone&#39;s blog</title>
   <meta name="author" content="Light_Cone" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -14,20 +14,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="Notice" />
+    <meta name="keywords" content="题解" />
   
-  <meta name="description" content="若文章中LaTeX失效，请刷新界面。">
+  <meta name="description" content="比赛链接. A - Increase Subarray Sums 诈骗题. 最初考虑 \(O(tn^2)\),认为过不了. 后来发现存在 \(\sum n \leq 5000\),果断暴力. 考虑 \(x\geq 0\),所以任何对原序列的操作都会使得答案不劣,且我们操作的必是连续的一段.所以暴力出任意长度序列下的最大连续子段和,暴力的叠加 \(x\) 的影响即可. 时间复杂度">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Notice">
-<meta property="og:url" content="https://light-century.github.io/2023/02/03/Notice/index.html">
+<meta property="og:title" content="练习赛 1">
+<meta property="og:url" content="https://light-century.github.io/2020/06/04/practice1/index.html">
 <meta property="og:site_name" content="Light_Cone&#39;s blog">
-<meta property="og:description" content="若文章中LaTeX失效，请刷新界面。">
+<meta property="og:description" content="比赛链接. A - Increase Subarray Sums 诈骗题. 最初考虑 \(O(tn^2)\),认为过不了. 后来发现存在 \(\sum n \leq 5000\),果断暴力. 考虑 \(x\geq 0\),所以任何对原序列的操作都会使得答案不劣,且我们操作的必是连续的一段.所以暴力出任意长度序列下的最大连续子段和,暴力的叠加 \(x\) 的影响即可. 时间复杂度">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://light-century.github.io/images/logo.png">
-<meta property="article:published_time" content="2023-02-03T06:24:43.000Z">
-<meta property="article:modified_time" content="2023-02-03T07:30:09.392Z">
+<meta property="article:published_time" content="2020-06-04T15:30:19.000Z">
+<meta property="article:modified_time" content="2023-06-08T15:30:12.928Z">
 <meta property="article:author" content="Light_Cone">
-<meta property="article:tag" content="Notice">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://light-century.github.io/images/logo.png">
   
@@ -143,15 +143,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2023/02/03/Notice/">
+    <link itemprop="mainEntityOfPage" href="https://light-century.github.io/2020/06/04/practice1/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">Notice</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">练习赛 1</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2023-02-03T06:24:43.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-02-03</time></li>
+                <li><time datetime="2020-06-04T15:30:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2020-06-04</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Light_Cone</span>
                 </li>
@@ -159,7 +159,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        20
+                        ~2.24K
                     
                     字
                 </li>
@@ -170,14 +170,105 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1675409409392"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1686238212928"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h2
-id="若文章中latex失效请刷新界面">若文章中LaTeX失效，请刷新界面。</h2>
+            <div itemprop="articleBody"><p><a
+target="_blank" rel="noopener" href="https://vjudge.net/contest/561873#overview">比赛链接.</a></p>
+<h1 id="a---increase-subarray-sums">A - Increase Subarray Sums</h1>
+<p>诈骗题.</p>
+<p>最初考虑 <span class="math inline">\(O(tn^2)\)</span>,认为过不了.</p>
+<p>后来发现存在 <span class="math inline">\(\sum n \leq
+5000\)</span>,果断暴力.</p>
+<p>考虑 <span class="math inline">\(x\geq
+0\)</span>,所以任何对原序列的操作都会使得答案不劣,且我们操作的必是连续的一段.所以暴力出任意长度序列下的最大连续子段和,暴力的叠加
+<span class="math inline">\(x\)</span> 的影响即可.</p>
+<p>时间复杂度 <span class="math inline">\(O(n^2)\)</span>.</p>
+<h1 id="b---line-empire">B - Line Empire</h1>
+<p>推式子题.</p>
+<p>发现我们是从左向右移动首都,且首都与被占领王国的距离越近越好.</p>
+<p>我们考虑枚举每一个位置作为最后的首都,对于首都及其之前的位置,我们可以边迁都边占领,总代价为
+<span class="math inline">\((a+b)\times
+c_k\)</span>.对于首都后的位置,代价则是 <span class="math inline">\(\sum
+c_i-c_k,c_k\)</span> 为首都的位置.</p>
+<p>故答案为<span class="math inline">\(for\ \ all\ i\
+,\min{\{(a+b)\times c_i+\operatorname{suf}_{i+1}-(n-i)\times
+c_i\}}.\)</span></p>
+<p>时间复杂度<span class="math inline">\(O(n)\)</span>.</p>
+<h1 id="c---prefix-function-queries">C - Prefix Function Queries</h1>
+<p>串串题.</p>
+<p>感觉需要跑自动机啥的,不大会.</p>
+<h1 id="d---letter-picking">D - Letter Picking</h1>
+<p>博弈论.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">证明：结果只会是Alice赢或平局.</span><br><span class="line"></span><br><span class="line">考虑任何前前缀位置,若存在两个不相等的字符,则Alice的选择一定更优.若所有前缀都相等,那么答案是平局.</span><br></pre></td></tr></table></figure>
+<p>首先,我们发现回文情况下的答案一定是平局,因为Bob可以跟随Alice的选择来导致不败,因为Bob没有赢的情况,所以这对Bob是最优的.</p>
+<p>若字符串两侧若存在回文段,那么我们可以让他们跟随选择进行消去,这对Bob而言是优的.</p>
+<p>考虑非回文段.我们发现,若存在<span class="math inline">\(s[l] \neq
+s[l+1]\)</span> 或 <span class="math inline">\(s[r-1] \neq
+s[r]\)</span>,则一定是Alice赢.</p>
+<p>下面考虑证明： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在两侧非回文状态下,此时必无法得到相等串.若存在$s[l] \neq s[l+1]$ 或 $s[r-1] \neq s[r]$,则Alice必可以通过先手优势让更劣的选择给Bob,同时继续利用先手优势使后续的决策不劣.</span><br></pre></td></tr></table></figure></p>
+<p>故,可以通过两端检测的方式解决问题.</p>
+<p>时间复杂度<span class="math inline">\(O(n)\)</span>.</p>
+<h1 id="e---card-game">E - Card Game</h1>
+<p>DP.</p>
+<p>令总牌数为 <span class="math inline">\(m\)</span>.</p>
+<p>此处先令 <span class="math inline">\(n = \frac{m}{2}.\)</span></p>
+<p>考虑组合数,总情况数即 <span
+class="math inline">\(\binom{2n}{n}\)</span>.</p>
+<p>考虑平局的情况只可能存在一种,即两个人大小相压.任意非这种情况的必有一个人拥有两张牌使得能在一轮压制对方,另一轮让对方无法压制.</p>
+<p>考虑如何求得先手胜的状态数.</p>
+<p>令 <span class="math inline">\(f[n]\)</span> 为每人有 <span
+class="math inline">\(n\)</span> 张牌时,先手赢的状态数.</p>
+<p>不难发现: - 如果最大牌在先手处,则只需首轮打出最大牌即可获胜,方案数为
+<span class="math inline">\(\binom{2n-1}{n-1}\)</span>.</p>
+<ul>
+<li><p>如果最大牌和次大牌不在先手处,则先手必输.</p></li>
+<li><p>当次大牌在先手,最大牌在后手,则必有一轮是先手打出次大,后手打出最大.因为后手为保证不输一定会保留最大牌来应对先手的次大牌.故此时游戏转化为
+<span class="math inline">\(n-1\)</span> 情况下后手赢的方案数,为 <span
+class="math inline">\(\binom{2n-2}{n-1}-f[n-1]-1\)</span>.</p></li>
+</ul>
+<p>考虑转移 <span class="math inline">\(f[n] = \binom{2n-1}{n-1} +
+\binom{2n-2}{n-1} - f[n-1] - 1\)</span></p>
+<p>因为 <span class="math inline">\(m\leq
+60\)</span>,故组合数暴力杨辉三角计算即可.</p>
+<p>时间复杂度<span class="math inline">\(O(n^2)\)</span>.</p>
+<h1 id="f---save-the-magazines">F - Save the Magazines</h1>
+<p>贪心.</p>
+<p>将连续段化点,判断移动后是否更优即可.</p>
+<p>时间复杂度 <span class="math inline">\(O(n)\)</span>.</p>
+<h1 id="g---li-hua-and-chess">G - Li Hua and Chess</h1>
+<p>交互 &amp; 思维题.</p>
+<p>发现最多询问三次,说明思路一定很简单.</p>
+<p><span class="math inline">\(n \times m\)</span> 的网格图.</p>
+<p>令答案为 <span class="math inline">\((x,y)\)</span>.</p>
+<p>考虑询问到 <span class="math inline">\((1,1)\)</span>
+的距离,发现答案一定是 <span
+class="math inline">\(\max(x,y)\)</span>,记为<span
+class="math inline">\(k_1\)</span>.</p>
+<p>再考虑,若 <span class="math inline">\(k_1&gt;n\)</span>,则必定是
+<span class="math inline">\(y\)</span>.</p>
+<p>否则,询问 <span class="math inline">\((k_1,1)\)</span>,记为 <span
+class="math inline">\(k_2\)</span>.若 <span class="math inline">\(k_2
+&lt; k_1\)</span>,则答案为 <span
+class="math inline">\((k_1,k_2)\)</span>.</p>
+<p>否则接着询问<span class="math inline">\((1,k_1)\)</span>,记为 <span
+class="math inline">\(k_3\)</span>.此时答案为 <span
+class="math inline">\((k_3,k_1)\)</span>.</p>
+<h1 id="h---combinatorics-problem">H - Combinatorics Problem</h1>
+<p>组合数式子题,不大会,开始练推数学式子再来试试.</p>
+<h1 id="i---bracket-coloring">I - Bracket Coloring</h1>
+<p>思维 &amp; 模拟.</p>
+<p>记左括号数量为 <span class="math inline">\(n\)</span>,右括号数量为
+<span class="math inline">\(m\)</span>.</p>
+<p>当前仅当 <span class="math inline">\(n \neq m\)</span>
+时无法分组,这是容易证明的.</p>
+<p>否则,其最多分为两组,一组右括号打头,一组左括号打头.</p>
+<p>考虑证明这件事情: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">证明:</span><br><span class="line">若我们遵循一般括号匹配,全程未出现不匹配情况,则为一组.</span><br><span class="line"></span><br><span class="line">若出现右括号不匹配,则前面所有的左括号都已经匹配完毕,且前缀为正常合法序列,则由于左括号数量等于右括号数量,则必有左括号等待与该右括号匹配.</span><br></pre></td></tr></table></figure></p>
+<p>剩下的暴力模拟即可.</p>
+<p>时间复杂度 <span class="math inline">\(O(n)\)</span>.</p>
 </div>
         </div>
         
@@ -227,7 +318,7 @@ id="若文章中latex失效请刷新界面">若文章中LaTeX失效，请刷新�
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://light-century.github.io/2023/02/03/Notice/",
+                text: "https://light-century.github.io/2020/06/04/practice1/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -239,10 +330,16 @@ id="若文章中latex失效请刷新界面">若文章中LaTeX失效，请刷新�
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://light-century.github.io/2023/02/03/Notice/";
-            const title         = "「Notice」";
-            const excerpt       = `若文章中LaTeX失效，请刷新界面。
-`;
+            const hostUrl       = "https://light-century.github.io/2020/06/04/practice1/";
+            const title         = "「练习赛 1」";
+            const excerpt       = `比赛链接.
+A - Increase Subarray Sums
+诈骗题.
+最初考虑 \(O(tn^2)\),认为过不了.
+后来发现存在 \(\sum n \leq
+5000\),果断暴力.
+考虑 \(x\geq
+0\)...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -261,10 +358,10 @@ id="若文章中latex失效请刷新界面">若文章中LaTeX失效，请刷新�
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/Notice/" rel="tag">Notice</a>
+                    <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-02-03T07:30:09.392Z" itemprop="dateModified">最后编辑：2023-02-03</time>
+                    <time datetime="2023-06-08T15:30:12.928Z" itemprop="dateModified">最后编辑：2023-06-08</time>
                 </div>
             </div>
         </footer>
@@ -273,9 +370,13 @@ id="若文章中latex失效请刷新界面">若文章中LaTeX失效，请刷新�
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CF1746C Permutation Operations" href="/2023/02/02/CF1746C/">&lt; 上一篇</a>
+                <a title=" luogu P2651 【添加括号III】" href="/2020/04/26/luogu-P2651-【添加括号III】/">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" 翻车记录" href="/2022/09/02/翻车记录/">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
